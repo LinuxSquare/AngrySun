@@ -17,7 +17,7 @@
       "conditions": {
         "items": [
           {
-            "item": "minecraft:reeds"
+            "item": "minecraft:iron_ingot"
           },
           {
             "item": "minecraft:string"

@@ -2,6 +2,8 @@ package mjaroslav.mcmods.angrysun.lib;
 
 import net.minecraftforge.common.config.Configuration;
 
+import java.util.List;
+
 public class ConfigInfo {
 	public static final String GENERAL = "general";
 	public static final String EFFECTS = GENERAL + ".effects";
@@ -16,6 +18,9 @@ public class ConfigInfo {
 	 * Use thermal underwear. If it's disabled, then any armor is used.
 	 */
 	public static boolean thermalunderwear;
+
+	public static String excludeddimensions;
+
 	/**
 	 * Use the cloak in conjunction with the hood.
 	 */
@@ -60,6 +65,8 @@ public class ConfigInfo {
 				.get(GENERAL, "enable_thermal_underwear", true,
 						"Use thermal underwear. If it's disabled, then any armor is used.")
 				.setRequiresMcRestart(true).getBoolean();
+		excludeddimensions = config.get(GENERAL, "excluded_dimensions", "{-1,1}", "Excluded Dimensions")
+				.setRequiresMcRestart(true).getString();
 		cloak = config.get(THERMALUNDERWEAR, "use_cloack", true, "Use the cloak in conjunction with the hood.")
 				.setRequiresMcRestart(true).getBoolean();
 		damage = config.getBoolean("damage", THERMALUNDERWEAR, true, "To cause damage to thermal underwear.");
