@@ -2,8 +2,6 @@ package mjaroslav.mcmods.angrysun.lib;
 
 import net.minecraftforge.common.config.Configuration;
 
-import java.util.List;
-
 public class ConfigInfo {
 	public static final String GENERAL = "general";
 	public static final String EFFECTS = GENERAL + ".effects";

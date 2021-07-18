@@ -1,8 +1,6 @@
-package mjaroslav.mcmods.angrysun.common.handler;
+package mjaroslav.mcmods.angrysun.client.handler;
 
-import mjaroslav.mcmods.angrysun.ModAngrySun;
 import mjaroslav.mcmods.angrysun.common.item.ItemThermalUnderwear;
-import mjaroslav.mcmods.angrysun.lib.ConfigInfo;
 import net.minecraft.client.resources.I18n;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraftforge.event.entity.player.ItemTooltipEvent;
